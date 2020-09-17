@@ -11,7 +11,7 @@
   touch-action: none;
   position: absolute;
   text-align: center;
-  z-index: -1;
+  z-index: 100;
 }
 .red {
   background-color: red;
