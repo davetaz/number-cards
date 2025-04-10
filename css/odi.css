@@ -419,7 +419,7 @@
   .header .logo {
     width: 189px;
     height: 36px;
-    background-image: url('/images/logo.svg');
+    background-image: url('images/logo.svg');
     background-repeat: no-repeat;
     background-size: contain;
   }
