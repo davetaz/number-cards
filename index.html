@@ -73,6 +73,17 @@
 		showOverlay("clues.html");
 	  });
 
+	  // Show tutor notes when "=" key is pressed
+	document.addEventListener('keydown', (event) => {
+	if (event.key === '=' || event.key === '+') {
+		// You might want to restrict this to cases where input fields aren't focused
+		if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+		event.preventDefault();
+		showOverlay("tutor-notes.html");
+		}
+	}
+	});
+
 	  function showOverlay(link) {
 		fetch(link)
 		  .then(response => response.text())
