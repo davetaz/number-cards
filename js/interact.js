@@ -45,10 +45,10 @@ function formatNumber(num) {
 
 function addElements(numbers) {
   $.each(numbers, function(idx) {
-    $("body").append('<div id="number'+idx+'" class="number">'+formatNumber(numbers[idx])+'</div>'); 
+    $("#cards").append('<div id="number'+idx+'" class="number">'+formatNumber(numbers[idx])+'</div>');
   });
   /*$.each(markers, function(idx) {
-    $("body").append('<div id="marker'+idx+'" class="marker"><text class="marker_text">'+formatNumber(markers[idx])+'</text><arrow class="marker_arrow"></arrow></div>'); 
+    $("body").append('<div id="marker'+idx+'" class="marker"><text class="marker_text">'+formatNumber(markers[idx])+'</text><arrow class="marker_arrow"></arrow></div>');
   });
   */
 }

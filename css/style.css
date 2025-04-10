@@ -1,12 +1,11 @@
 .number {
-  font-family: helvetica, sans;
   width: 195px;
-  background-color: #29e;
+  background-color: var(--color-dark-blue);
   color: #fff;
-  font-size: 2.5em;
-  border-radius: 4px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  font-size: 2em;
+  border-radius: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin: 5px;
   touch-action: none;
   position: absolute;
@@ -37,6 +36,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+#cards {
+  min-height: 800px;
 }
 @media print {
   .number {
